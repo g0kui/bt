@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tiny-slider@2.9.4/dist/tiny-slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Emergency visibility check */
+        body { background: #000 !important; color: #fff !important; }
+        .hero-section { background: #111 !important; }
+        h1 { color: #fff !important; font-size: 3rem; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" data-aos="fade-down">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/bio logo.png" alt="Stackly Logo" class="img-fluid">
+                Stackly
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/research.html">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pages/contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link btn-login" href="pages/login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                    <h1 class="display-3 fw-bold text-white mb-4 animate__animated animate__fadeInLeft">
+                        Innovating <span class="text-gradient circular-text">Biotechnology</span> for Tomorrow
+                    </h1>
+                    <p class="lead text-white-50 mb-4 animate__animated animate__fadeInLeft animate__delay-1s">
+                        Leading the future of genetic research, pharmaceutical development, and sustainable solutions.
+                    </p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="pages/404.html" class="btn btn-primary btn-lg get-started-btn" data-aos="zoom-in" data-aos-delay="200">
+                            <i class="fas fa-rocket me-2"></i> Get Started
+                        </a>
+                        <a href="pages/404.html" class="btn btn-outline-light btn-lg" data-aos="zoom-in" data-aos-delay="300">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="hero-image-container">
+                        <img src="images/h1.webp" alt="Biotechnology" class="img-fluid rounded-4 shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator animate__animated animate__bounce animate__infinite">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-card text-center">
+                        <div class="stat-icon mb-3">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h3 class="counter" data-target="500">0</h3>
+                        <p>Research Projects</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-card text-center">
+                        <div class="stat-icon mb-3">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="counter" data-target="1200">0</h3>
+                        <p>Scientists</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-card text-center">
+                        <div class="stat-icon mb-3">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3 class="counter" data-target="850">0</h3>
+                        <p>Innovations</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-card text-center">
+                        <div class="stat-icon mb-3">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3 class="counter" data-target="150">0</h3>
+                        <p>Awards</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <h2 class="section-title display-4 fw-bold mb-3">Our Core Technologies</h2>
+                    <p >Cutting-edge solutions transforming healthcare and biotechnology</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="100">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-dna"></i>
+                        </div>
+                        <h4>Genetic Engineering</h4>
+                        <p >Advanced CRISPR technology for precise gene editing and therapeutic applications.</p>
+                        <a href="pages/404.html" class="feature-link">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="200">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-pills"></i>
+                        </div>
+                        <h4>Drug Development</h4>
+                        <p >Innovative pharmaceutical research accelerating treatment discoveries.</p>
+                        <a href="pages/404.html" class="feature-link">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="300">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4>Sustainable Solutions</h4>
+                        <p>Bio-based materials and eco-friendly biotechnology innovations.</p>
+                        <a href="pages/404.html" class="feature-link">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="400">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>Neural Research</h4>
+                        <p>Breakthrough studies in neuroscience and cognitive enhancement.</p>
+                        <a href="pages/404.html" class="feature-link">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="500">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h4>Diagnostics</h4>
+                        <p>Next-generation diagnostic tools for early disease detection.</p>
+                        <a href="pages/404.html" class="feature-link">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="flip-left" data-aos-delay="600">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h4>Agriculture Tech</h4>
+                        <p>Biotech solutions for sustainable farming and crop improvement.</p>
+                        <a href="pages/404.html" class="feature-link">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section id="carousel" class="carousel-section py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <h2 class="section-title display-4 fw-bold mb-3">Our Latest Research</h2>
+                    <p >Explore groundbreaking discoveries from our laboratories</p>
+                </div>
+            </div>
+            <div class="owl-carousel owl-theme research-carousel">
+                <div class="item">
+                    <div class="research-card">
+                        <img src="images/h5.webp" alt="Research 1">
+                        <div class="research-content">
+                            <h4>Cancer Immunotherapy</h4>
+                            <p>Revolutionary T-cell engineering approaches</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="research-card">
+                        <img src="images/h2.webp" alt="Research 2">
+                        <div class="research-content">
+                            <h4>Gene Therapy</h4>
+                            <p>Novel vectors for genetic disorder treatment</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="research-card">
+                        <img src="images/h3.webp" alt="Research 3">
+                        <div class="research-content">
+                            <h4>Stem Cell Research</h4>
+                            <p>Regenerative medicine breakthroughs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="research-card">
+                        <img src="images/h4.webp" alt="Research 4">
+                        <div class="research-content">
+                            <h4>Molecular Diagnostics</h4>
+                            <p>Advanced biomarker identification</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline-section py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <h2 class="section-title display-4 fw-bold mb-3">Our Journey</h2>
+                    <p >Milestones in biotechnology innovation</p>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item left" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <h4>2020 - Foundation</h4>
+                        <p>Stackly Biotechnology was established with a vision to revolutionize healthcare.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <h4>2021 - First Breakthrough</h4>
+                        <p>Developed novel gene editing platform with 99% accuracy.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <h4>2023 - Global Expansion</h4>
+                        <p>Opened research facilities across 5 continents.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <h4>2024 - Award Recognition</h4>
+                        <p>Received International Biotech Innovation Award.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <h2 class="section-title display-4 fw-bold mb-3">What Experts Say</h2>
+                    <p >Testimonials from leading scientists and partners</p>
+                </div>
+            </div>
+            <div class="slick-slider testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"Stackly's innovative approach to gene therapy is transforming how we treat genetic disorders."</p>
+                        <div class="testimonial-author">
+                            <h5>Dr. Sarah Johnson</h5>
+                            <span>Chief Geneticist, MedTech Institute</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"Their research in immunotherapy has opened new possibilities for cancer treatment."</p>
+                        <div class="testimonial-author">
+                            <h5>Prof. Michael Chen</h5>
+                            <span>Oncology Research Director</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"The sustainable biotech solutions from Stackly are game-changers for agriculture."</p>
+                        <div class="testimonial-author">
+                            <h5>Dr. Emily Rodriguez</h5>
+                            <span>Agricultural Biotechnology Expert</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="cta-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8" data-aos="fade-right">
+                    <h2 class="display-4 fw-bold text-white mb-3">Ready to Transform Healthcare?</h2>
+                    <p class="lead text-white-50">Join us in shaping the future of biotechnology and medical innovation.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end" data-aos="fade-left">
+                    <a href="pages/404.html" class="btn btn-light btn-lg px-5">Get Started Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-4"><i class="fas fa-dna me-2"></i>STACKLY</h5>
+                    <p class="text-white-50">Innovating biotechnology solutions for a healthier tomorrow.</p>
+                    <div class="social-links mt-4">
+                        <a href="pages/404.html" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="pages/404.html" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="pages/404.html" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="pages/404.html" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="text-white mb-4">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="pages/about.html">About Us</a></li>
+                        <li><a href="pages/services.html">Services</a></li>
+                        <li><a href="pages/research.html">Research</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="text-white mb-4">Services</h6>
+                    <ul class="footer-links">
+                        <li><a href="pages/services.html">Genetic Engineering</a></li>
+                        <li><a href="pages/services.html">Drug Development</a></li>
+                        <li><a href="pages/services.html">Diagnostics</a></li>
+                        <li><a href="pages/services.html">Agriculture Tech</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="text-white mb-4">Contact Info</h6>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt me-2"></i>123 Bio Street, Science City</li>
+                        <li><i class="fas fa-phone me-2"></i>+1 234 567 8900</li>
+                        <li><i class="fas fa-envelope me-2"></i>info@stackly.bio</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 bg-white opacity-25">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="text-white-50 mb-0">&copy; 2024 Stackly Biotechnology. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="pages/404.html" class="text-white-50 me-3">Privacy Policy</a>
+                    <a href="pages/404.html" class="text-white-50">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/2.1.3/jarallax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.appear/0.4.1/jquery.appear.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/circletype/2.3.0/circletype.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.0/nouislider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.2.0/wNumb.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tiny-slider@2.9.4/dist/min/tiny-slider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.2.0/jquery.countdown.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/404.css">
+</head>
+<body class="error-body">
+    <div class="error-container">
+        <div class="container">
+            <div class="row justify-content-center align-items-center min-vh-100">
+                <div class="col-lg-8 text-center">
+                    <div class="error-content" data-aos="zoom-in">
+                        <div class="error-icon mb-4 animate__animated animate__bounceIn">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        
+                        <h1 class="error-code display-1 fw-bold mb-3 animate__animated animate__fadeInDown">
+                            404
+                        </h1>
+                        
+                        <h2 class="error-title mb-4 animate__animated animate__fadeInUp">
+                            Page Not Found
+                        </h2>
+                        
+                        <p >
+                            Oops! The page you're looking for doesn't exist. It might have been moved, deleted, or the URL might be incorrect.
+                        </p>
+                        
+                        <div class="error-actions animate__animated animate__fadeIn animate__delay-1s">
+                            <button onclick="goBack()" class="btn btn-primary btn-lg me-3 mb-3">
+                                <i class="fas fa-arrow-left me-2"></i> Go Back
+                            </button>
+                            <a href="../index.html" class="btn btn-outline-light btn-lg mb-3">
+                                <i class="fas fa-home me-2"></i> Homepage
+                            </a>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Decorative DNA Animation -->
+        <div class="dna-animation">
+            <div class="dna-strand"></div>
+            <div class="dna-strand delay-1"></div>
+            <div class="dna-strand delay-2"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        function goBack() {
+            if (document.referrer && document.referrer !== window.location.href) {
+                window.history.back();
+            } else {
+                window.location.href = '../index.html';
+            }
+        }
+
+        // Particle background effect
+        const createParticle = () => {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDuration = (Math.random() * 3 + 2) + 's';
+            particle.style.animationDelay = Math.random() * 2 + 's';
+            document.querySelector('.error-body').appendChild(particle);
+            
+            setTimeout(() => particle.remove(), 5000);
+        };
+
+        setInterval(createParticle, 300);
+    </script>
+</body>
+</html>
