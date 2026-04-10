@@ -355,6 +355,46 @@
     padding: 1.5rem;
 }
 
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table-responsive table {
+    min-width: 700px;
+}
+
+.table-responsive table th,
+.table-responsive table td {
+    white-space: nowrap;
+}
+
+@media (max-width: 576px) {
+    .table-responsive table {
+        min-width: 600px;
+    }
+}
+
+@media (max-width: 991px) {
+    .dashboard-card .card-header,
+    .dashboard-card .card-body {
+        padding: 1rem;
+    }
+
+    .dashboard-card .card-body .d-flex.justify-content-between {
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    .dashboard-card .card-body .btn-sm {
+        min-width: 0;
+    }
+
+    .progress {
+        min-width: 0;
+    }
+}
+
 /* Activity Items */
 .activity-item {
     display: flex;
