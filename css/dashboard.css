@@ -111,6 +111,7 @@
     padding: 1rem 1.5rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 1rem;
     position: sticky;
     top: 0;
@@ -118,6 +119,7 @@
 }
 
 .sidebar-toggle {
+    display: none;
     background: none;
     border: none;
     color: var(--text-primary);
@@ -126,6 +128,13 @@
     padding: 0.5rem;
     transition: all 0.3s ease;
     border-radius: 5px;
+}
+
+.topbar-actions {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .sidebar-toggle:hover {
@@ -666,6 +675,14 @@
         margin-left: 0;
     }
 
+    .sidebar-toggle {
+        display: inline-flex;
+    }
+
+    .topbar-actions {
+        margin-left: 0;
+    }
+
     .user-info {
         display: none;
     }
@@ -763,7 +780,7 @@
     }
 
     .file-item .d-flex {
-        flex-direction: column;
+        
         align-items: flex-start !important;
         gap: 1rem;
     }

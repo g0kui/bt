@@ -567,6 +567,14 @@ body {
 
 /* Responsive Design */
 @media (max-width: 991px) {
+    .navbar {
+        padding: 0.75rem 0;
+    }
+
+    .navbar-brand img {
+        max-height: 55px;
+    }
+
     .navbar-nav {
         background: var(--card-bg);
         padding: 1rem;
@@ -575,7 +583,7 @@ body {
     }
     
     .nav-link {
-        margin: 0.5rem 0;
+        margin: 0.35rem 0;
     }
     
     .timeline::before {
@@ -597,7 +605,11 @@ body {
 @media (max-width: 768px) {
     .hero-section {
         min-height: auto;
-        padding: 100px 0 50px;
+        padding: 120px 0 50px;
+    }
+    
+    .navbar-nav {
+        padding: 0.75rem;
     }
     
     h1.display-3 {
@@ -622,6 +634,18 @@ body {
 }
 
 @media (max-width: 576px) {
+    .navbar {
+        padding: 0.65rem 0;
+    }
+
+    .navbar-brand img {
+        max-height: 48px;
+    }
+
+    .hero-section {
+        padding-top: 110px;
+    }
+
     h1.display-3 {
         font-size: 2rem !important;
     }
